@@ -38,6 +38,9 @@ nav a:hover,
 nav a:focus {
 	outline: none;
 }
+.container{
+  width: 1170px;
+}
 .copyrights{
 	text-indent:-9999px;
 	height:0;
@@ -108,7 +111,7 @@ nav a:focus {
 .top-menu ul li a{
 	display:block;
 	color:#fff;
-	font-size:1.25em;
+	font-size:2em;
 	padding:0 1em;
 	font-family:'MavenPro-Bold';
 	text-decoration:none;
@@ -185,6 +188,7 @@ h3.abt,h3.ser,.gallery h3,.skills h3,.contact h3,.pricing-text h3{
 	text-align:center;
 	font-family:'MavenPro-Bold';
 	font-size:3em;
+  padding: 10px;
 }
 .about-top{
 	margin-top:4em;
@@ -247,7 +251,7 @@ h3.abt,h3.ser,.gallery h3,.skills h3,.contact h3,.pricing-text h3{
 /*-- gallery --*/
 .gallery {
   padding: 4em 0;
-  background:url(../images/bg2.png) no-repeat 0px 0px;
+  background:url(../images/bg3.png) no-repeat 0px 0px;
 	background-size:cover;
 	height: 100%;
 }
@@ -258,12 +262,13 @@ h3.abt,h3.ser,.gallery h3,.skills h3,.contact h3,.pricing-text h3{
 	padding: 0;
 }
 .da-thumbs li {
-  float: left;
-  margin: 0.4%;
-   padding: 15px;
-  position: relative;
-   width: 32.4%;
-   height: 240px;
+    float: left;
+    margin: 0 15px 15px 0;
+    position: relative;
+    width: 365px;
+    height: 240px;
+    border: 10px solid #eee;
+    box-shadow: 0 0 15px 1px #999;
 }
 .da-thumbs li a,
 .da-thumbs li a img {
@@ -304,6 +309,9 @@ h3.abt,h3.ser,.gallery h3,.skills h3,.contact h3,.pricing-text h3{
 /*--//gallery--*/
 .skills{
 	padding-bottom:3em;
+    background:url(../images/bg4.png) no-repeat 0px 0px;
+	background-size:cover;
+	height: 100%;
 }
 .skill-grids{
 	margin-top:3em;
@@ -311,6 +319,8 @@ h3.abt,h3.ser,.gallery h3,.skills h3,.contact h3,.pricing-text h3{
 .progress {
   width: 90%;
     margin-bottom:2em;
+    box-shadow: none;
+    -webkit-box-shadow:none;
 }
 .skills h4{
 	font-family:'MavenPro-Bold';
@@ -635,9 +645,6 @@ background-position:-167px -36px;
 .about-grid-info h3 {
   font-size: 1.6em;
 }
-h3.abt, h3.ser, .gallery h3, .skills h3, .contact h3, .pricing-text h3 {
-  font-size: 2.5em;
-}
 .service-pic {
 	padding-left:0;
 }
@@ -666,7 +673,15 @@ h3.abt, h3.ser, .gallery h3, .skills h3, .contact h3, .pricing-text h3 {
 	padding-right:0;
 }
 }
-@media (max-width: 991px){
+@media (min-width: 992px){
+.container {
+    width: 1170px;
+}
+@media (min-width: 768px){
+.container {
+    width: 1170px;
+}
+/*@media (max-width: 991px){
 .logo h1 a {
   font-size: 1.2em;
 }
@@ -736,7 +751,7 @@ ul.callbacks_tabs.callbacks1_tabs {
 .contact-left{
 	padding:0;
 }
-}
+}*/
 @media (max-width: 640px){
 span.menu{
 	display: block;
@@ -765,7 +780,7 @@ span.menu{
 }
 .top-menu ul li a {
 	padding:8px 0;
-	font-size:1.4em;
+	font-size:3em;
 }
 .top-menu  ul{
 	margin: 0;
