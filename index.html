@@ -1,265 +1,261 @@
-<!DOCTYPE HTML>
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<title>Home</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="keywords" content="Progress Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
-Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
-	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
-	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
-	<link rel="stylesheet" href="css/chocolat.css" type="text/css" media="screen" />
-	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-<script src="js/modernizr.custom.97074.js"></script>
-<script src="js/jquery-1.8.3.min.js"></script>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="static/dist/css/style.min.css">
+	<script src="static/dist/js/jquery-1.8.3.min.js"></script>
+	<script src="static/dist/js/jquery.fullPage.min.js"></script>
+	<script src="static/dist/js/jquery.fullPage.js"></script>
+	<script src="static/dist/js/modernizr.custom.js"></script>
+	<script src="static/dist/js/pace.min.js"></script>
+	<script src="static/dist/js/jquery.hoverdir.js"></script>
+	<script src="static/dist/js/jineng.js"></script>
 
-<script type="text/javascript" src="js/move-top.js"></script>
-<script type="text/javascript" src="js/easing.js"></script>
-<script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
-<script>
-	$(function () {
-		$('#dowebok').fullpage({
-			sectionsColor: ['#1bbc9b', '#4BBFC3', '#bbe48e', '#c3f0a8'],
-			loopBottom: true,
-			navigation: true,
-		});
+	
 
-		setInterval(function () {
-			$.fn.fullpage.moveSlideRight();
-		}, 3000);
 
-	});
-</script>
-</head>
 
-<body>
-	<div id="dowebok">
-		<div class="section">
-			<div id="home" class="banner">
-				<div class="header">
-					<div class="container">
-						<div class="logo">
-							<h1><a href="#">安俊卿</a></h1>
-						</div>
-					</div>
-				</div>
-				<div class="top-menu">
-					<div class="container">
-						<nav class="cl-effect-1">
-							<span class="menu"><img src="images/nav-icon.png" alt=""/></span>
-							<ul>
-								<li><a class="scroll" href="#home">首页</a></li>
-								<li><a class="scroll" href="#service">工作经历</a></li>
-								<li><a class="scroll" href="#gallery">项目经验</a></li>
-								<li><a class="scroll" href="#skills">技能专栏</a></li>
-								<li><a class="scroll" href="#skills">About</a></li>
-							</ul>
-						</nav>
-					</div>
-					<script>					
-						$("span.menu").click(function () {
-							$(".top-menu ul").slideToggle("slow", function () {
-							});
-						});
-					</script>
 
-				</div>
-				<div class="banner-info">
-					<div class="container">
-						<h2>Quisque enim orci, luctus et dolor ac, faucibus vulputate lacus orci, vel auctor enim lobortis luctus. </h2>
-					</div>
-				</div>
-			</div>
-		</div>
-<div class="section">
-	<div id="service" class="service">
-		<div class="container">
-			<h3 class="ser">工作经验</h3>
-			<div class="service-grids">
-				<div class="service-grid">
-					<div class="col-md-4 service-pic">
-						<img src="images/s1.jpg" class="img-responsive" alt="" />
-					</div>
-					<div class="col-md-8 service-info">
-						<h3>上海韬源 外派PPTV</h3>
-						<h4>工作描述：</h4>
-						<p>1.根据产品设计，利用HTML5+CSS3技术或框架实现WebApp中的交互效果.</p>
-						<p>2.移动端重构.</p>
-						<p>3.活动/专题页面制作及功能模块开发</p>
-					</div>
-					<div class="clearfix"></div>
-				</div>
-				<div class="service-grid">
-					<div class="col-md-4 service-pic">
-						<img src="images/jiuliumi.png" class="img-responsive" alt="" />
-					</div>
-					<div class="col-md-8 service-info">
-						<h3>上海 久留米</h3>
-						<h4>工作描述：</h4>
-						<p>1.负责公司官网前台页面开发.根据设计师的psd图,利用Html5完成前端页面的开发以及运用Html5、JS 、Jquery、 CSS/CSS3完成前端的交互效果等等,配合后端开发人员共同完成整个网站的开发.</p>
-						<p>2.浏览器兼容及页面优化,统一全局css样式,后期页面维护.</p>
-						<p></p>
-					</div>
-					<div class="clearfix"></div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-</div>
-<div class="section">
-	<div class="gallery" id="gallery" style="padding: 0;">
-<div class="container">
-	<h3>项目展示</h3>
-	<div class="gallery-grids">
-		<section>
-			<ul id="da-thumbs" class="da-thumbs">
-				<li>
-					<a href="images/g1.jpg" class="" target="_blank">
-						<img src="images/longzhu.png" alt="" />
-						<div>
-							<h5>龙珠频道</h5>
-							<span>对线上新增龙珠频道增加入口及前端页面/功能开发</span>
-						</div>
-					</a>
-				</li>
-				<li>
-					<a href="http://longzhu.pptv.com/" class="" target="_blank">
-						<img src="images/aoyun.png" alt="" />
-						<div>
-							<h5>里约奥运会</h5>
-							<span>该项目是2016年巴西奥运会及英超专题项目，对赛程及视频实时更新展示；本次项目在时间相对紧急的情况下配合后端等相关团队积极沟通，相互配合最终完成该项目的上线</span>
-						</div>
-					</a>
-				</li>
-				<li>
-					<a href="http://z.pptv.com/gousas/" class="" target="_blank">
-						<img src="images/usa.png" alt="" />
-						<div>
-							<h5>美国旅游局专题</h5>
-							<span>该项目为相关销售或商城部门业务，该业务专题页面主要为客户提供产品或相关需求展示及广告业务投放</span>
-						</div>
-					</a>
-				</li>
-				<li>
-					<a href="http://z.pptv.com/nubia/" class="" target="_blank">
-						<img src="images/nubia.png" alt="" />
-						<div>
-							<h5>努比亚发布会</h5>
-							<span>该项目为相关销售或商城部门业务，该业务专题页面主要为客户提供产品或相关需求展示及广告业务投放</span>
-						</div>
-					</a>
-				</li>
-				<li>
-					<a href="http://yingchao.pptv.com/" class="" target="_blank">
-						<img src="images/yingchao.png" alt="" />
-						<div>
-							<h5>英超频道</h5>
-							<span>该项目是2016年巴西奥运会及英超专题项目，对赛程及视频实时更新展示；本次项目在时间相对紧急的情况下配合后端等相关团队积极沟通，相互配合最终完成该项目的上线</span>
-						</div>
-					</a>
-				</li>
-				<li>
-					<a href="http://z.pptv.com/surpriseday/" class="" target="_blank">
-						<img src="images/ppshopping.png" alt="" />
-						<div>
-							<h5>PP商城</h5>
-							<span>该项目为相关销售或商城部门业务，该业务专题页面主要为客户提供产品或相关需求展示及广告业务投放</span>
-						</div>
-					</a>
-				</li>
-				<li>
-					<a href="http://z.pptv.com/sportsvan/" class="" target="_blank">
-						<img src="images/gaoerfu.png" alt="" />
-						<div>
-							<h5>一汽大众·高尔夫专题</h5>
-							<span>该项目为相关销售或商城部门业务，该业务专题页面主要为客户提供产品或相关需求展示及广告业务投放</span>
-						</div>
-					</a>
-				</li>
-				<li>
-					<a href="http://z.pptv.com/kd2016" class=" " target="_blank">
-						<img src="images/kangdi.png" alt="" />
-						<div>
-							<h5>康涤专题</h5>
-							<span>该项目为相关销售或商城部门业务，该业务专题页面主要为客户提供产品或相关需求展示及广告业务投放</span>
-						</div>
-					</a>
-				</li>
-				<li>
-					<a href="images/caijing.png" class=" ">
-						<img src="images/caijing.png" alt="" target="_blank" />
-						<div>
-							<h5>财经APP下载引导页</h5>
-							<span>该项目是财经APP项目完成上线后，根据个平台提供接口展示的多平台下载渠道，该页面根据不同尺寸设备进行适配；</span>
-						</div>
-					</a>
-				</li>
-			</ul>
-			<div class="clearfix"> </div>
-		</section>
-		<script type="text/javascript" src="js/jquery.hoverdir.js"></script>
-		<script type="text/javascript">
-			$(function () {
-
-				$(' #da-thumbs > li ').each(function () { $(this).hoverdir(); });
+	<script>
+		$(function(){
+			$('#homework').fullpage({
+				sectionsColor: ['#333', '#4BBFC3', '#7BA456', '#66d5fd','#ff6400'],
+				loopBottom: true,
+				// navigation: true,
+				anchors: ['page1', 'page2', 'page3', 'page4','page5'],
+				menu: '.top-menu'
 
 			});
-		</script>
-</div>
-</div>
-</div>
-</div>
-<div class="section">
-	<div id="skills" class="skills">
-		<div class="container">
-			<h3>技能专栏</h3>
-			<div class="skill-grids">
-				<h4>HTML5</h4>
-				<div class="progress">
-					<div class="progress-bar progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%">
-<span class="sr-only">95% Complete</span>
-</div>
-</div>
-<h4>Css3</h4>
-<div class="progress">
-	<div class="progress-bar progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%">
-<span class="sr-only">90% Complete</span>
-</div>
-</div>
-<h4>Jquert
-	<h4>
-		<div class="progress">
-			<div class="progress-bar progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%">
-<span class="sr-only">90% Complete</span>
-</div>
-</div>
-<h4>JavaScript</h4>
-<div class="progress">
-	<div class="progress-bar progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
-<span class="sr-only">80% Complete</span>
-</div>
-</div>
-<h4>Gulp</h4>
-<div class="progress">
-	<div class="progress-bar progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
-<span class="sr-only">80% Complete</span>
-</div>
-</div>
-<h4>Less</h4>
-<div class="progress">
-	<div class="progress-bar progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
-<span class="sr-only">80% Complete</span>
-</div>
-</div>
-</div>
-</div>
-</div>
 
-</div>
+		    // $(window).resize(function(){
+		    //     autoScrolling();
+		    // });
+		    // function autoScrolling(){
+		    //     var $ww = $(window).width();
+		    //     if($ww < 990){
+		    //         $.fn.fullpage.setAutoScrolling(false);
+		    //     } else {
+		    //         $.fn.fullpage.setAutoScrolling(true);
+		    //     }
+		    // }
+		    // autoScrolling();
+		});
+	</script>
+	<script>
+		$(function(){
+			if($.browser.msie && $.browser.version < 10){
+				$('.dowebok-explain').show();
+			}
+
+			var $animate = $('#animate');
+
+		    $animate.addClass('animated rubberBand');
+		    setTimeout(function(){
+		        $animate.removeClass('rubberBand');
+		    }, 1500);
+		    $('#animate_top').hover(function() {
+		    	$animate.addClass('animated rubberBand')
+		    }, function() {
+		    	 $animate.removeClass('rubberBand');
+		    });
+		});
+		var navLi = $('#nav_Li a'); 
+		navLi.hover(function() { 
+			navLi.addClass('bounceIn animate infinite') 
+		}, function() { 
+			navLi.removeClass('bounceIn animate infinite') 
+		});
+	</script>
+
+</head>
+<body>
+<script>
+$(document).ready(function($) {
+	if(typeof Pace != 'undefined'){
+	Pace.on('hide', function(){
+		$(".overlay").fadeOut(500,function(){
+			$(this).remove();
+		});
+	});
+}
+});
+</script>
+<!-- Overlay visible only while loading of page -->
+	<div class="overlay" style="width: 100%;height: 100%;background: #333;z-index: 1000;position: fixed;"></div>
+
+<!-- <p class="dowebok-explain">您的浏览器不支持 CSS3 animate 属性，所以您看不到任何效果，请使用 Firefox、Chrome 或 IE10</p>
+<div class="top" id="animate_top">
+    <h3 id="animate">Animate</h3>
+</div> -->
+<div id="homework">
+	<div class="top-menu">
+	    <nav class="cl-effect-1">						
+            <ul id="nav_Li">
+                <li ><a class="scroll" href="#page1">首页</a></li>
+                <li ><a class="scroll" href="#page2">工作经验</a></li>
+                <li ><a class="scroll" href="#page3">项目展示</a></li>
+                <li ><a class="scroll" href="#page4">技能专栏</a></li>
+                <li ><a class="scroll" href="#page5">About</a></li>
+            </ul>
+        </nav>
+	</div>
+	<div class="section ">
+		
+		<div class="container port-showcase">
+			<div class="liuxing"></div>
+			<div class="containerin about-me">
+				<div class="row">
+					<div class="col-md-6">
+						<!-- User image -->
+						<img src="static/dist/images/avatar.jpg" alt="user" class="img img-responsive img-circle img-profile">
+					</div>
+					<div class="col-md-6">
+						<!-- User name  -->
+						<h3 class="heading txt-md">Hi! I'm <span class="color-inverse txt-border name">Junqing An</span></h3>
+						<!-- Short description of user -->
+						<p>I have a combination of character, adaptability, honest, good interpersonal skills, with relevant professional knowledge and serious. Careful, patient work attitude and good professional ethics. I believe that the team spirit is responsible to the work, always want to make things better! Cheerful, sensitive to words and numbers, life is full of hope, full of passion for work! Can adapt to the new environment in the short term, there is a strong sense of quality; the work of a serious and responsible, self-motivated! </p>	
+					</div>
+				</div>
+			</div>
+	    </div>		
+	</div>
+
+	<div class="section">
+		<h3 class="modules-tit">工作经验</h3>
+			<p>尽力写尽力写完</p>
+	</div>
+	<div class="section">
+	    <div class="gallery" id="gallery" style="padding: 0;">
+	        <div class="container xmzs">
+	            <h3 class="modules-tit">项目展示</h3>
+	            <div class="gallery-grids">
+	                <section>
+	                    <ul id="da-thumbs" class="da-thumbs">
+	                        <li>
+	                            <a href="static/dist/images/g1.jpg" class="" target="_blank">
+	                                <img src="static/dist/images/longzhu.png" alt="" />
+	                                <div>
+	                                    <h5>龙珠频道</h5>
+	                                    <span>对线上新增龙珠频道增加入口及前端页面/功能开发</span>
+	                                </div>
+	                            </a>
+	                        </li>
+	                        <li>
+	                            <a href="http://longzhu.pptv.com/" class="" target="_blank">
+	                                <img src="static/dist/images/aoyun.png" alt="" />
+	                                <div>
+	                                    <h5>里约奥运会</h5>
+	                                    <span>该项目是2016年巴西奥运会及英超专题项目，对赛程及视频实时更新展示；本次项目在时间相对紧急的情况下配合后端等相关团队积极沟通，相互配合最终完成该项目的上线</span>
+	                                </div>
+	                            </a>
+	                        </li>
+	                        <li>
+	                            <a href="http://z.pptv.com/gousas/" class="" target="_blank">
+	                                <img src="static/dist/images/usa.png" alt="" />
+	                                <div>
+	                                    <h5>美国旅游局专题</h5>
+	                                    <span>该项目为相关销售或商城部门业务，该业务专题页面主要为客户提供产品或相关需求展示及广告业务投放</span>
+	                                </div>
+	                            </a>
+	                        </li>
+	                        <li>
+	                            <a href="http://z.pptv.com/nubia/" class="" target="_blank">
+	                                <img src="static/dist/images/nubia.png" alt="" />
+	                                <div>
+	                                    <h5>努比亚发布会</h5>
+	                                    <span>该项目为相关销售或商城部门业务，该业务专题页面主要为客户提供产品或相关需求展示及广告业务投放</span>
+	                                </div>
+	                            </a>
+	                        </li>
+	                        <li>
+	                            <a href="http://yingchao.pptv.com/" class="" target="_blank">
+	                                <img src="static/dist/images/yingchao.png" alt="" />
+	                                <div>
+	                                    <h5>英超频道</h5>
+	                                    <span>该项目是2016年巴西奥运会及英超专题项目，对赛程及视频实时更新展示；本次项目在时间相对紧急的情况下配合后端等相关团队积极沟通，相互配合最终完成该项目的上线</span>
+	                                </div>
+	                            </a>
+	                        </li>
+	                        <li>
+	                            <a href="http://z.pptv.com/surpriseday/" class="" target="_blank">
+	                                <img src="static/dist/images/ppshopping.png" alt="" />
+	                                <div>
+	                                    <h5>PP商城</h5>
+	                                    <span>该项目为相关销售或商城部门业务，该业务专题页面主要为客户提供产品或相关需求展示及广告业务投放</span>
+	                                </div>
+	                            </a>
+	                        </li>
+	                        <li>
+	                            <a href="http://z.pptv.com/sportsvan/" class="" target="_blank">
+	                                <img src="static/dist/images/gaoerfu.png" alt="" />
+	                                <div>
+	                                    <h5>一汽大众·高尔夫专题</h5>
+	                                    <span>该项目为相关销售或商城部门业务，该业务专题页面主要为客户提供产品或相关需求展示及广告业务投放</span>
+	                                </div>
+	                            </a>
+	                        </li>
+	                        <li>
+	                            <a href="http://z.pptv.com/kd2016" class=" " target="_blank">
+	                                <img src="static/dist/images/kangdi.png" alt="" />
+	                                <div>
+	                                    <h5>康涤专题</h5>
+	                                    <span>该项目为相关销售或商城部门业务，该业务专题页面主要为客户提供产品或相关需求展示及广告业务投放</span>
+	                                </div>
+	                            </a>
+	                        </li>
+	                        <li>
+	                            <a href="http://finance.pptv.com/finance_app/download/" class=" " target="_blank">
+	                                <img src="static/dist/images/caijing.png" alt="" target="_blank" />
+	                                <div>
+	                                    <h5>财经APP下载引导页</h5>
+	                                    <span>该项目是财经APP项目完成上线后，根据个平台提供接口展示的多平台下载渠道，该页面根据不同尺寸设备进行适配；</span>
+	                                </div>
+	                            </a>
+	                        </li>
+	                    </ul>
+	                    <div class="clearfix"> </div>
+	                </section>
+	                
+	                <script type="text/javascript">
+		                $(function() {
+		                    $(' #da-thumbs > li ').each(function() {
+		                        $(this).hoverdir();
+		                    });
+		                });
+	                </script>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+
+	<div class="section">
+		<h3 class="modules-tit">掌握技能</h3>
+		<div class="canvas-tx">
+            <div class="bd" id="canvas_list">
+                <ul>
+                    <li>
+                        <canvas id="canvas_html" width="150" height="150"></canvas>
+                    </li>
+                    <li>
+
+                        <canvas id="canvas_js" width="150" height="150"></canvas>
+                    </li>
+                    <li>
+
+                        <canvas id="canvas_gp" width="150" height="150"></canvas>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+	</div>
+
+	<div class="section">
+		<h3 class="modules-tit">自我介绍</h3>
+		
+	</div>
 </div>
 
 </body>
-
 </html>

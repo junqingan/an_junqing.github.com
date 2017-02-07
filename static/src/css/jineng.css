@@ -1,0 +1,66 @@
+.canvas-tx{
+	width: 1200px;
+	height: 300px;
+	margin: 50px auto;
+	overflow: hidden;
+}
+.canvas-tx .hd{
+	width: 1200px;
+	height: 60px;
+	line-height: 60px;
+	font-weight: 600;
+	text-align: center;
+	margin: 0 auto 10px; 
+}
+.canvas-tx .hd h3{
+position: relative;    
+}
+.canvas-tx .hd h3:before{
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -250px;
+	border: 1px solid #32c5d2;
+	width: 500px;
+}
+.canvas-tx .hd h3 span{
+	display: inline-block;
+	padding: 0 20px;
+	font-size: 30px;
+    margin: 0 auto;
+    background: #eef0f3;
+    position: relative;
+    z-index: 20;
+    color: #000;
+}
+.canvas-tx .bd{}
+.canvas-tx ul{
+	width: 1200px;
+	height: 300px;
+	overflow: hidden;
+}
+.canvas-tx ul li{
+	    width: 300px;
+    margin: 10px 50px;
+    height: 200px;
+    float: left;
+    background: rgba(208, 64, 64, 0.2);
+    text-align: center;
+    padding: 20px 0 0;
+    box-sizing: border-box;
+    position: relative;
+    color: #ededed;
+    font-size: 24px;
+    border: 5px solid #e995ff;
+    font-weight: 600;
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 8px 2px #676767;
+}
+.canvas-tx ul li canvas{
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	margin: -75px 0 0 -75px;
+	color: #fff;
+}
