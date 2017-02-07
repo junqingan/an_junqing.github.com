@@ -379,8 +379,15 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 		    overflow:hidden;
 		    -webkit-tap-highlight-color: rgba(0,0,0,0);
 		}
-		.section { text-align: center; font: 50px "Microsoft Yahei"; color: #fff;overflow:hidden; padding-top:130px;box-sizing: border-box;-webkit-box-sizing:border-box; }
-
+.section {
+    text-align: center;
+    font: 50px "Microsoft Yahei";
+    color: #fff;
+    overflow: hidden;
+    padding-top: 90px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
 .fp-tableCell{
     vertical-align: top;
 }
@@ -496,6 +503,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 	width: 100%;
 	height: 40px;
 	line-height: 40px;
+    margin-bottom: 30PX;
 	font-size: 22px;
 	text-align: center;
 	color: #fff;
@@ -584,9 +592,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     color: #E0FF00 !important;
 }
 /*项目展示*/
-.xmzs .modules-tit{
-	margin-bottom: 15px;
-}
+
 .gallery-grids {
     margin-top: 30px;
     max-width: 1200px;
@@ -720,6 +726,72 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 	    border: 10px solid #eee;
 	    box-shadow: 0 0 15px 1px #999;
 	}
+}
+/*技能*/
+.jineng{
+    overflow: hidden;
+    max-width: 1200px;
+    margin: 20px auto 0;
+    vertical-align: top;
+    height: 60px;
+    padding-left: 100px; 
+}
+.jineng p {
+    float: left;
+    margin-right: 20px;
+    height: 60px;
+    width:  185PX;
+    text-align: left;
+}
+.progress {
+    float: left;
+    width: 50%;
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    text-align: left;
+    margin: 15px 0 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 5px 0px #ddd inset;
+}
+.progress span {
+    display: block;
+    width: 80%;
+    height: 100%;
+    border-radius: 15px;
+    background: #2989d8; /* Old browsers */
+    background: -moz-linear-gradient(45deg, #2989d8 33%, #7db9e8 34%, #7db9e8 59%, #2989d8 60%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left bottom, right top, color-stop(33%, #2989d8), color-stop(34%, #7db9e8), color-stop(59%, #7db9e8), color-stop(60%, #2989d8)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(45deg, #2989d8 33%, #7db9e8 34%, #7db9e8 59%, #2989d8 60%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(45deg, #2989d8 33%, #7db9e8 34%, #7db9e8 59%, #2989d8 60%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(45deg, #2989d8 33%, #7db9e8 34%, #7db9e8 59%, #2989d8 60%); /* IE10+ */
+    background: linear-gradient(45deg, #2989d8 33%, #7db9e8 34%, #7db9e8 59%, #2989d8 60%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2989d8', endColorstr='#2989d8', GradientType=1); /* IE6-9 fallback on horizontal gradient */
+    background-size: 60px 30px;
+    text-align: center;
+    color: #fff;
+    -webkit-animation: htmlload 3s ease-in;
+}
+@-webkit-keyframes htmlload {
+    0% { width: 0%; }
+    100% { width: 80%; }
+}
+.html-txt p{
+    color: #2989d8;
+}
+.html-txt  span{
+     width: 80%;
+}
+.css-txt p{
+    color: #f3b529;
+}
+.css-txt span {
+     width: 90%;
+     -webkit-animation: cssload 3s ease-in;
+}
+@-webkit-keyframes cssload {
+    0% { width: 0%; }
+    100% { width: 90%; }
 }
 .canvas-tx{
 	width: 1200px;

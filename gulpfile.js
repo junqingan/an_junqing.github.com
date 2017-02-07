@@ -16,7 +16,7 @@ gulp.task('clean',function () {
 		.pipe(clean())
 })
 //编译less
-gulp.task('testLess', function () {
+gulp.task('Less', function () {
     gulp.src('static/src/css/*.min.less')
         .pipe(less())
         .pipe(gulp.dest('static/src/css'));
@@ -87,10 +87,10 @@ gulp.task('web', function() {
     }));
 });
 
-// gulp.task('default', ['css','testLess', 'js','images', 'font'])
+// gulp.task('default', ['css','Less', 'js','images', 'font'])
 // gulp.task('default', ['css', 'js','images', 'font','webserver'])
 // 
-gulp.task('default',['testLess','css']);
+gulp.task('default',['Less','css']);
 //自动监控css
 gulp.task('testWatch', function () {
     gulp.watch('static/src/**/*.css', ['default']);
