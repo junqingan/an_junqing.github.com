@@ -90,7 +90,7 @@ gulp.task('web', function() {
 // gulp.task('default', ['css','testLess', 'js','images', 'font'])
 // gulp.task('default', ['css', 'js','images', 'font','webserver'])
 // 
-gulp.task('default',['testLess',]);
+gulp.task('default',['testLess','css']);
 //自动监控css
 gulp.task('testWatch', function () {
     gulp.watch('static/src/**/*.css', ['default']);
