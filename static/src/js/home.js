@@ -13,33 +13,64 @@ $(function() {
 				$('.section2').find('p').delay(200).animate({
 					left: '0'
 				}, 1200, 'easeOutExpo');
+				$('.section2').find('.heading').delay(100).animate({
+					right:'0'
+				},1000,'linear')
 			}
 			if (index == 3) {
 				$('.section3').find('.gallery-grids').animate({
-					right: '0'
+					left: '0'
 				}, 1000, 'linear');
+				$('.section3').find('.heading').delay(100).animate({
+					left:'0'
+				},500,'linear')
 			}
 			if (index == 4) {
+				$('.section4').find('.heading').delay(100).animate({
+					right:'0'
+				},1000,'linear')
 				$('.section4').find('.html-txt').delay(500).fadeIn(500);
 				$('.section4').find('.css-txt').delay(1000).fadeIn(800);
 				$('.section4').find('.js-txt').delay(2000).fadeIn(1200);
 				$('.section4').find('.jq-txt').delay(3000).fadeIn(1500);
 				$('.section4').find('.gulp-txt').delay(4000).fadeIn(1800);
 			}
+			if (index == 5) {
+				$('.section5').find('.heading').delay(100).animate({
+					top: '0'
+				},1000,'linear')
+				
+			}
 		},
 		onLeave: function(index, direction) {
+
 			if (index == '2') {
 				$('.section2').find('p').delay(200).animate({
 					left: '-150%'
 				}, 1500, 'easeOutExpo');
+				$('.section2').find('.heading').delay(100).animate({
+					right:'-150%'
+				},1000,'linear')
 			}
 			if (index == '3') {
+				$('.section3').find('.heading').delay(100).animate({
+					left:'-150%'
+				},1000,'linear')
 				$('.section3').find('.gallery-grids').delay(200).animate({
 					right: '-150%'
 				}, 500, 'linear');
 			}
 			if (index == '4') {
+				$('.section4').find('.heading').delay(100).animate({
+					right:'-150%'
+				},1000,'linear')
 				$('.section4').find('.jineng').fadeOut(30);
+			}
+			if (index == '5') {
+				$('.section5').find('.heading').delay(100).animate({
+					top:'-50%'
+				},1000,'linear')
+				
 			}
 		}
 	});
@@ -260,3 +291,10 @@ $(function() {
 	// })
 	
 } )( jQuery, window );
+;(function (argument) {
+	$('.mypic').hover(function(){
+	    $(".picinfo").css("display","block");
+	},function(){
+	    $(".picinfo").css("display","none");
+	});
+})

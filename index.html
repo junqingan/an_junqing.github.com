@@ -16,7 +16,19 @@
 	.section4 .jineng.js-txt,
 	.section4 .jineng.jq-txt,
 	.section4 .jineng.gulp-txt{ display: none;}
-
+	.heading{position: absolute;}
+	.section2 .heading{
+		right: -150%;
+	}
+	.section3 .heading{
+		left: -150%;
+	}
+	.section4 .heading{
+		right: -150%;
+	}
+	.section5 .heading{
+		top: -50%;
+	}
 	</style>
 	<script>
 		$(function(){
@@ -85,10 +97,6 @@ $(document).ready(function($) {
 					<div class="col-md-6 mypic">
 						<!-- User image -->
 						<img src="static/dist/images/avatar.jpg" alt="user" class="img img-responsive img-circle img-profile">
-						<div class="picinfo">
-							<span>联系方式：17721023901</span>
-							<span>QQ:738418625</span>
-						</div>
 					</div>
 					<div class="col-md-6">
 						<!-- User name  -->
@@ -102,13 +110,13 @@ $(document).ready(function($) {
 	</div>
 
 	<div class="section section2">
-		<h3 class="modules-tit">工作经验</h3>
+		<h2 class="heading">工作经验<span class="heading-tit"></span></h2>
 			<p>尽力写尽力写完</p>
 	</div>
 	<div class="section section3">
 	    <div class="gallery" id="gallery" style="padding: 0;">
 	        <div class="container xmzs">
-	            <h3 class="modules-tit">项目展示</h3>
+	            <h2 class="heading">项目简介<span class="heading-tit"></span></h2>
 	            <div class="gallery-grids">
 	                <section>
 	                    <ul id="da-thumbs" class="da-thumbs">
@@ -245,7 +253,7 @@ $(document).ready(function($) {
 	</div>
 
 	<div class="section section5">
-		<h2 class="heading">My Portfolio<span class="heading-tit"></span></h2>
+		<h2 class="heading">我的资料<span class="heading-tit"></span></h2>
 		<div class="aboutinfo">
 			<p>男|3年工作经验|1990年1月|未婚</p>
 			<p>现居住于上海-浦东新区 |大专| 户口河南-南阳</p>

@@ -38,7 +38,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     font: 50px "Microsoft Yahei";
     color: #fff;
     overflow: hidden;
-    padding-top: 90px;
+    padding-top: 75px;
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
 }
@@ -215,20 +215,17 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     -ms-transform: translate(-50%,-50%);
     display: block;
     width: 50%;
-    
+    border: 5px solid #000;
 }
 .mypic{
     /*overflow: hidden;*/
     cursor: pointer;
     transition:  filter:1s;
 }
-.mypic .picinfo{
-    display: none;
-    font-size: 18px;
-}
-.port-showcase .mypic:hover .img-profile {
+/*.port-showcase .mypic:hover .img-profile {
     filter: blur(3px)
-}
+}*/
+
 
 
 .port-showcase .about-me .heading {
@@ -236,6 +233,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     font-size: 30px;
     color: #fff;
     text-align: left;
+    position: static;
 }
 .port-showcase p, .port-showcase .heading, .port-showcase .btn {
     color: #F8F8F8;
@@ -546,6 +544,7 @@ h2.heading {
     padding: 20px 0;
     border-bottom: 2px solid #ccc;
     position: relative;
+    margin-bottom: 30px;
 }
 span.heading-tit {
     display: block;
