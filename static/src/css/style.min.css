@@ -389,6 +389,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     -webkit-box-sizing: border-box;
 }
 .fp-tableCell{
+    display: block;
+    width: 1200px;
+    margin: 0 auto;
     vertical-align: top;
 }
 .liuxing {
@@ -526,11 +529,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     background-color: rgba(0, 0, 0, 0.7);
         position: absolute;
     top: 50%;
-    transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translateY(-50%,-50%);
+    -ms-transform: translateY(-50%,-50%);
+    -o-transform: translateY(-50%,-50%);
 }
 .row {
 	width: 100%;
@@ -557,7 +561,22 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     -ms-transform: translate(-50%,-50%);
     display: block;
     width: 50%;
+    
 }
+.mypic{
+    /*overflow: hidden;*/
+    cursor: pointer;
+    transition:  filter:1s;
+}
+.mypic .picinfo{
+    display: none;
+    font-size: 18px;
+}
+.port-showcase .mypic:hover .img-profile {
+    filter: blur(3px)
+}
+
+
 .port-showcase .about-me .heading {
     margin-bottom: 50px;
     font-size: 30px;
@@ -626,13 +645,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     position: relative;
     width: 100%;
     height: 100%;
-    transition: transform 4s;
+    transition: transform 4s, filter:1s;
     -webkit-transition: transform 4s;
 } 
 .da-thumbs li a:hover img{
     transform: scale(1.5);
     -webkit-transform: scale(1.5);
-
+    filter: blur(3px)
 }
 .da-thumbs li a div {
     position: absolute;
@@ -675,7 +694,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 	    width: 305px;
 	    height: 215px;
 	    border: 10px solid #eee;
-	    box-shadow: 0 0 15px 1px #999;
 	}
 }
 @media screen and (max-width: 1035px){
@@ -691,10 +709,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 	    float: left;
 	    margin: 8px 15px 20px 15px;
 	    position: relative;
-	    width: 285px;
+	    width: 280px;
 	    height: 196px;
 	    border: 10px solid #eee;
-	    box-shadow: 0 0 15px 1px #999;
 	}
 }
 @media screen and (max-width: 990px){
@@ -713,7 +730,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 	    width: 280px;
 	    height: 196px;
 	    border: 10px solid #eee;
-	    box-shadow: 0 0 15px 1px #999;
 	}
 }
 @media screen and (max-width: 640px){
@@ -732,7 +748,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 	    width: 280px;
 	    height: 196px;
 	    border: 10px solid #eee;
-	    box-shadow: 0 0 15px 1px #999;
 	}
 }
 /*技能*/
@@ -852,6 +867,41 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 @-webkit-keyframes jqload {
     0% { width: 0%; }
     100% { width: 70%; }
+}
+
+
+/*about*/
+.aboutinfo {
+    width: 990px;
+    margin: 0 auto;
+    text-align: left;
+    line-height: 34px;
+    font-size: 18px;
+    color: #fff;
+    font-family:Microsoft YaHei ;
+}
+.aboutinfo span{
+    display: inline-block;
+    min-width: 200px;
+    padding: 0 10px;
+
+}
+h2.heading {
+    text-align: left;
+    font-size: 24px;
+    padding: 20px 0;
+    border-bottom: 2px solid #ccc;
+    position: relative;
+}
+span.heading-tit {
+    display: block;
+    width: 182px;
+    height: 4px;
+    background: #f35626;
+    position: absolute;
+    bottom: -3px;
+    left: -1px;
+    border-radius: 2px;
 }
 .canvas-tx{
 	width: 1200px;
