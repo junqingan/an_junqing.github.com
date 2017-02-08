@@ -3,31 +3,21 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
-	<link rel="stylesheet" href="static/dist/css/style.min.css">
-	<script src="static/dist/js/jquery-1.8.3.min.js"></script>
-	<script src="static/dist/js/jquery.fullPage.min.js"></script>
-	<script src="static/dist/js/jquery.fullPage.js"></script>
-	<script src="static/dist/js/modernizr.custom.js"></script>
-	<script src="static/dist/js/pace.min.js"></script>
-	<script src="static/dist/js/jquery.hoverdir.js"></script>
-	<script src="static/dist/js/jineng.js"></script>
+	<link rel="stylesheet" href="static/src/css/style.min.css">
+	<script src="static/src/js/jquery-1.8.3.min.js"></script>
+	<script src="static/src/js/jquery.fullPage.min.js"></script>
+	<script src="static/src/js/jquery.easing.min.js"></script>
+	<script src="static/src/js/home.js"></script>
+	<style>
+	.section2 p { position: relative; left: -120%;}
+	.section3 .gallery-grids { position: relative; right:  -120%;}
+	.section4 .jineng.html-txt,
+	.section4 .jineng.css-txt,
+	.section4 .jineng.js-txt,
+	.section4 .jineng.jq-txt,
+	.section4 .jineng.gulp-txt{ display: none;}
 
-	
-
-
-
-
-	<script>
-		$(function(){
-			$('#homework').fullpage({
-				sectionsColor: ['#333', '#333', '#333', '#333','#fff'],
-				loopBottom: true,
-				// navigation: true,
-				anchors: ['page1', 'page2', 'page3', 'page4','page5'],
-				menu: '.top-menu'
-			});
-		});
-	</script>
+	</style>
 	<script>
 		$(function(){
 			if($.browser.msie && $.browser.version < 10){
@@ -86,7 +76,7 @@ $(document).ready(function($) {
             </ul>
         </nav>
 	</div>
-	<div class="section ">
+	<div class="section section1">
 		
 		<div class="container port-showcase">
 			<div class="liuxing"></div>
@@ -98,20 +88,20 @@ $(document).ready(function($) {
 					</div>
 					<div class="col-md-6">
 						<!-- User name  -->
-						<h3 class="heading txt-md">Hi! I'm <span class="color-inverse txt-border name">Junqing An</span></h3>
+						<h3 class="heading txt-md">Hi! I'm <span class="color-inverse txt-border name">安 俊卿</span></h3>
 						<!-- Short description of user -->
-						<p>I have a combination of character, adaptability, honest, good interpersonal skills, with relevant professional knowledge and serious. Careful, patient work attitude and good professional ethics. I believe that the team spirit is responsible to the work, always want to make things better! Cheerful, sensitive to words and numbers, life is full of hope, full of passion for work! Can adapt to the new environment in the short term, there is a strong sense of quality; the work of a serious and responsible, self-motivated! </p>	
+						<p>本人性格相结合，适应性强，诚实，良好的人际交往能力，具备相关专业知识和认真。细心，耐心的工作态度和良好的职业道德。我相信团队精神是对工作负责的，总想把事情做得更好！开朗，对文字和数字敏感，生活充满希望，对工作充满激情！能适应新环境的短期内，有强烈的品质意识；工作认真负责，上进心强！</p>	
 					</div>
 				</div>
 			</div>
 	    </div>		
 	</div>
 
-	<div class="section">
+	<div class="section section2">
 		<h3 class="modules-tit">工作经验</h3>
 			<p>尽力写尽力写完</p>
 	</div>
-	<div class="section">
+	<div class="section section3">
 	    <div class="gallery" id="gallery" style="padding: 0;">
 	        <div class="container xmzs">
 	            <h3 class="modules-tit">项目展示</h3>
@@ -215,30 +205,8 @@ $(document).ready(function($) {
 	    </div>
 	</div>
 
-	<div class="section">
+	<div class="section section4">
 		<h3 class="modules-tit">掌握技能</h3>
-		<div class="canvas-tx">
-            <div class="bd" id="canvas_list">
-                <ul>
-                    <li>
-                        <canvas id="canvas_html" width="150" height="150"></canvas>
-                    </li>
-                    <li>
-
-                        <canvas id="canvas_js" width="150" height="150"></canvas>
-                    </li>
-                    <li>
-
-                        <canvas id="canvas_gp" width="150" height="150"></canvas>
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-	</div>
-
-	<div class="section">
-		<h3 class="modules-tit">自我介绍</h3>
 		<div class="jineng html-txt">
 			<p>HTML</p>
 			<div class="progress">
@@ -251,6 +219,30 @@ $(document).ready(function($) {
 	        	<span></span>
 			</div>
 		</div>
+		<div class="jineng js-txt">
+			<p>JavaScript</p>
+			<div class="progress">
+	        	<span></span>
+			</div>
+		</div>
+		<div class="jineng jq-txt">
+			<p>Jquery</p>
+			<div class="progress">
+	        	<span></span>
+			</div>
+		</div>
+		<div class="jineng gulp-txt">
+			<p>Gulp</p>
+			<div class="progress">
+	        	<span></span>
+			</div>
+		</div>
+
+	</div>
+
+	<div class="section section5">
+		<h3 class="modules-tit">自我介绍</h3>
+		
 	</div>
 </div>
 
