@@ -220,7 +220,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 .mypic{
     /*overflow: hidden;*/
     cursor: pointer;
-    transition:  filter:1s;
+    transition: filter 1s;
 }
 /*.port-showcase .mypic:hover .img-profile {
     filter: blur(3px)
@@ -297,7 +297,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     position: relative;
     width: 100%;
     height: 100%;
-    transition: transform 4s, filter:1s;
+    transition: transform 4s, filter 1s;
     -webkit-transition: transform 4s;
 } 
 .da-thumbs li a:hover img{
@@ -402,125 +402,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 	    border: 10px solid #eee;
 	}
 }
-/*技能*/
-.jineng{
-    overflow: hidden;
-    max-width: 1200px;
-    margin: 20px auto 0;
-    vertical-align: top;
-    height: 60px;
-    padding-left: 100px; 
-}
-.jineng p {
-    float: left;
-    margin-right: 20px;
-    height: 60px;
-    width:  240PX;
-    text-align: left;
-}
-.progress {
-    float: left;
-    width: 60%;
-    height: 30px;
-    border: 1px solid #ccc;
-    border-radius: 15px;
-    text-align: left;
-    margin: 15px 0 0 0;
-    overflow: hidden;
-    box-shadow: 0 0 5px 0px #ddd inset;
-}
-.progress span {
-    display: block;
-    width: 80%;
-    height: 100%;
-    border-radius: 15px;
-    background: #2989d8; /* Old browsers */
-    background: -moz-linear-gradient(45deg, #2989d8 33%, #7db9e8 34%, #7db9e8 59%, #2989d8 60%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left bottom, right top, color-stop(33%, #2989d8), color-stop(34%, #7db9e8), color-stop(59%, #7db9e8), color-stop(60%, #2989d8)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(45deg, #2989d8 33%, #7db9e8 34%, #7db9e8 59%, #2989d8 60%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(45deg, #2989d8 33%, #7db9e8 34%, #7db9e8 59%, #2989d8 60%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(45deg, #2989d8 33%, #7db9e8 34%, #7db9e8 59%, #2989d8 60%); /* IE10+ */
-    background: linear-gradient(45deg, #2989d8 33%, #7db9e8 34%, #7db9e8 59%, #2989d8 60%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2989d8', endColorstr='#2989d8', GradientType=1); /* IE6-9 fallback on horizontal gradient */
-    background-size: 60px 30px;
-    text-align: center;
-    color: #fff;
-    -webkit-animation: htmlload 3s ease-in;
-}
-@-webkit-keyframes htmlload {
-    0% { width: 0%; }
-    100% { width: 80%; }
-}
-.html-txt p{
-    color: #2989d8;
-}
-.html-txt  span{
-     width: 80%;
-}
-.css-txt p{
-    color: #f3b529;
-}
-.css-txt .progress span {
-     width: 90%;
-    background: #f3b529; /* Old browsers */
-    background: -moz-linear-gradient(45deg, #f3b529 33%, #7db9e8 34%, #7db9e8 59%, #2989d8 60%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left bottom, right top, color-stop(33%, #f3b529), color-stop(34%, #7db9e8), color-stop(59%, #7db9e8), color-stop(60%, #f3b529)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(45deg, #f3b529 33%, #7db9e8 34%, #7db9e8 59%, #f3b529 60%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(45deg, #f3b529 33%, #7db9e8 34%, #7db9e8 59%, #f3b529 60%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(45deg, #f3b529 33%, #7db9e8 34%, #7db9e8 59%, #f3b529 60%); /* IE10+ */
-    background: linear-gradient(45deg, #f3b529 33%, #7db9e8 34%, #7db9e8 59%, #f3b529 60%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f3b529', endColorstr='#f3b529', GradientType=1); /* IE6-9 fallback on horizontal gradient */
-    background-size: 60px 30px;
-     -webkit-animation: cssload 3s ease-in;
-
-}
-@-webkit-keyframes cssload {
-    0% { width: 0%; }
-    100% { width: 90%; }
-}
-.js-txt p{
-    color: yellow;
-}
-.js-txt .progress span {
-     width: 60%;
-     background: yellow; /* Old browsers */
-    background: -moz-linear-gradient(45deg, yellow 33%, #7db9e8 34%, #7db9e8 59%, yellow 60%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left bottom, right top, color-stop(33%, yellow), color-stop(34%, #7db9e8), color-stop(59%, #7db9e8), color-stop(60%, yellow)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(45deg, yellow 33%, #7db9e8 34%, #7db9e8 59%, yellow 60%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(45deg,yellow 33%, #7db9e8 34%, #7db9e8 59%, yellow 60%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(45deg, yellow 33%, #7db9e8 34%, #7db9e8 59%, yellow 60%); /* IE10+ */
-    background: linear-gradient(45deg, yellow 33%, #7db9e8 34%, #7db9e8 59%, yellow 60%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='yellow', endColorstr='yellow', GradientType=1); /* IE6-9 fallback on horizontal gradient */
-    -webkit-animation: jsload 3s ease-in;
-    background-size: 60px 30px;
-}
-
-@-webkit-keyframes jsload {
-    0% { width: 0%; }
-    100% { width: 60%; }
-}
-.jq-txt p{
-    color: #3ebfbe;
-}
-.jq-txt .progress span {
-     width: 70%;
-     background: #3ebfbe; /* Old browsers */
-    background: -moz-linear-gradient(45deg, #3ebfbe 33%, #fff 34%, #fff 59%, #3ebfbe 60%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left bottom, right top, color-stop(33%, #3ebfbe), color-stop(34%, #7db9e8), color-stop(59%, #7db9e8), color-stop(60%, #3ebfbe)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(45deg, #3ebfbe 33%, #fff 34%, #fff 59%, #3ebfbe 60%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(45deg,#3ebfbe 33%, #fff 34%, #fff 59%, #3ebfbe 60%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(45deg, #3ebfbe 33%, #fff 34%, #fff 59%, #3ebfbe 60%); /* IE10+ */
-    background: linear-gradient(45deg, #3ebfbe 33%, #fff 34%, #fff 59%, #3ebfbe 60%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3ebfbe', endColorstr='#3ebfbe', GradientType=1); /* IE6-9 fallback on horizontal gradient */
-    -webkit-animation: jqload 3s ease-in;
-    background-size: 60px 30px;
-}
-
-@-webkit-keyframes jqload {
-    0% { width: 0%; }
-    100% { width: 70%; }
-}
-
 
 /*about*/
 .aboutinfo {
