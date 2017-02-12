@@ -6,7 +6,7 @@
 		sectionsColor: ['#333', '#333', '#333', '#333', '#333'],
 		loopBottom: true,
 		// navigation: true,
-		anchors: ['首页', '工作经历', '项目展示', '技能熟练度', 'about'],
+		anchors: ['首页', '工作经验', '项目展示', '技能专栏', 'About'],
 		menu: '.top-menu',
 		afterLoad: function(anchorLink, index) {
 			if (index == 2) {
