@@ -413,11 +413,17 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     color: #fff;
     font-family:Microsoft YaHei ;
 }
+.aboutinfo p{
+    margin-top: 30px;
+    padding: 0 10px;
+}
 .aboutinfo span{
     display: inline-block;
+    padding-right: 10px;
+}
+.aboutinfo span.tel,
+.aboutinfo span.eml{
     min-width: 200px;
-    padding: 0 10px;
-
 }
 h2.heading {
     text-align: left;

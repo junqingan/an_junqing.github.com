@@ -1,265 +1,289 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Document</title>
-	<link rel="stylesheet" href="static/src/css/style.min.css">
-	<script src="static/src/js/jquery-1.8.3.min.js"></script>
-	<script src="static/src/js/jquery.fullPage.min.js"></script>
-	<script src="static/src/js/jquery.easing.min.js"></script>
-	<script src="static/src/js/home.js"></script>
-	<script>
-		$(function(){
-			if($.browser.msie && $.browser.version < 10){
-				$('.dowebok-explain').show();
-			}
-			var $animate = $('#animate');
 
-		    $animate.addClass('animated rubberBand');
-		    setTimeout(function(){
-		        $animate.removeClass('rubberBand');
-		    }, 1500);
-		    $('#animate_top').hover(function() {
-		    	$animate.addClass('animated rubberBand')
-		    }, function() {
-		    	 $animate.removeClass('rubberBand');
-		    });
-		});
-		var navLi = $('#nav_Li a'); 
-		navLi.hover(function() { 
-			navLi.addClass('bounceIn animate infinite') 
-		}, function() { 
-			navLi.removeClass('bounceIn animate infinite') 
-		});
-	</script>
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<link rel="stylesheet" href="static/src/css/style.min.css">
+		<script src="static/src/js/jquery-1.8.3.min.js"></script>
+		<script src="static/src/js/jquery.fullPage.min.js"></script>
+		<script src="static/src/js/jquery.easing.min.js"></script>
+		<script src="static/src/js/home.js"></script>
+		<script>
+			$(function () {
+				if ($.browser.msie && $.browser.version < 10) {
+					$('.dowebok-explain').show();
+				}
+				var $animate = $('#animate');
 
-</head>
-<body>
-<script>
-$(document).ready(function($) {
-	if(typeof Pace != 'undefined'){
-	Pace.on('hide', function(){
-		$(".overlay").fadeOut(500,function(){
-			$(this).remove();
-		});
-	});
-}
-});
-</script>
-<!-- Overlay visible only while loading of page -->
-	<div class="overlay" style="width: 100%;height: 100%;background: #333;z-index: 1000;position: fixed;"></div>
+				$animate.addClass('animated rubberBand');
+				setTimeout(function () {
+					$animate.removeClass('rubberBand');
+				}, 1500);
+				$('#animate_top').hover(function () {
+					$animate.addClass('animated rubberBand')
+				}, function () {
+					$animate.removeClass('rubberBand');
+				});
+			});
+			var navLi = $('#nav_Li a');
+			navLi.hover(function () {
+				navLi.addClass('bounceIn animate infinite')
+			}, function () {
+				navLi.removeClass('bounceIn animate infinite')
+			});
+		</script>
 
-<!-- <p class="dowebok-explain">您的浏览器不支持 CSS3 animate 属性，所以您看不到任何效果，请使用 Firefox、Chrome 或 IE10</p>
+	</head>
+
+	<body>
+		<script>
+			$(document).ready(function ($) {
+				if (typeof Pace != 'undefined') {
+					Pace.on('hide', function () {
+						$(".overlay").fadeOut(500, function () {
+							$(this).remove();
+						});
+					});
+				}
+			});
+
+		</script>
+		<!-- Overlay visible only while loading of page -->
+		<div class="overlay" style="width: 100%;height: 100%;background: #333;z-index: 1000;position: fixed;"></div>
+
+		<!-- <p class="dowebok-explain">您的浏览器不支持 CSS3 animate 属性，所以您看不到任何效果，请使用 Firefox、Chrome 或 IE10</p>
 <div class="top" id="animate_top">
     <h3 id="animate">Animate</h3>
 </div> -->
-<div id="homework">
-	<div class="top-menu">
-	    <nav class="cl-effect-1">						
-            <ul id="nav_Li">
-                <li ><a class="scroll" href="#首页">首页</a></li>
-                <li ><a class="scroll" href="#工作经验">工作经验</a></li>
-                <li ><a class="scroll" href="#项目展示">项目展示</a></li>
-                <li ><a class="scroll" href="#技能专栏">技能专栏</a></li>
-                <li ><a class="scroll" href="#About">About</a></li>
-            </ul>
-        </nav>
-	</div>
-	<div class="section section1">
-		
-		<div class="container port-showcase">
-			<div class="liuxing"></div>
-			<div class="containerin about-me">
-				<div class="row">
-					<div class="col-md-6 mypic">
-						<!-- User image -->
-						<img src="static/dist/images/avatar.jpg" alt="user" class="img img-responsive img-circle img-profile">
-					</div>
-					<div class="col-md-6">
-						<!-- User name  -->
-						<h3 class="heading txt-md">Hi! I'm <span class="color-inverse txt-border name">安 俊卿</span></h3>
-						<!-- Short description of user -->
-						<p>本人性格相结合，适应性强，诚实，良好的人际交往能力，具备相关专业知识和认真。细心，耐心的工作态度和良好的职业道德。我相信团队精神是对工作负责的，总想把事情做得更好！开朗，对文字和数字敏感，生活充满希望，对工作充满激情！能适应新环境的短期内，有强烈的品质意识；工作认真负责，上进心强！</p>	
+		<div id="homework">
+			<div class="top-menu">
+				<nav class="cl-effect-1">
+					<ul id="nav_Li">
+						<li><a class="scroll" href="#首页">首页</a></li>
+						<li><a class="scroll" href="#工作经验">工作经验</a></li>
+						<li><a class="scroll" href="#项目展示">项目展示</a></li>
+						<li><a class="scroll" href="#技能专栏">技能专栏</a></li>
+						<li><a class="scroll" href="#About">About</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="section section1">
+
+				<div class="container port-showcase">
+					<div class="liuxing"></div>
+					<div class="containerin about-me">
+						<div class="row">
+							<div class="col-md-6 mypic">
+								<!-- User image -->
+								<img src="static/dist/images/avatar.jpg" alt="user" class="img img-responsive img-circle img-profile">
+							</div>
+							<div class="col-md-6">
+								<!-- User name  -->
+								<h3 class="heading txt-md">Hi! I'm <span class="color-inverse txt-border name">安 俊卿</span></h3>
+								<!-- Short description of user -->
+								<p>本人性格相结合，适应性强，诚实，良好的人际交往能力，具备相关专业知识和认真。细心，耐心的工作态度和良好的职业道德。我相信团队精神是对工作负责的，总想把事情做得更好！开朗，对文字和数字敏感，生活充满希望，对工作充满激情！能适应新环境的短期内，有强烈的品质意识；工作认真负责，上进心强！</p>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
-	    </div>		
-	</div>
 
-	<div class="section section2">
-		<h2 class="heading">工作经验<span class="heading-tit"></span></h2>
-			<p>尽力写尽力写完</p>
-	</div>
-	<div class="section section3">
-	    <div class="gallery" id="gallery" style="padding: 0;">
-	        <div class="container xmzs">
-	            <h2 class="heading">项目简介<span class="heading-tit"></span></h2>
-	            <div class="gallery-grids">
-	                <section>
-	                    <ul id="da-thumbs" class="da-thumbs">
-	                        <li>
-	                            <a href="static/dist/images/g1.jpg" class="" target="_blank">
-	                                <img src="static/dist/images/longzhu.png" alt="" />
-	                                <div>
-	                                    <h5>龙珠频道</h5>
-	                                    <span>对线上新增龙珠频道增加入口及前端页面/功能开发</span>
-	                                </div>
-	                            </a>
-	                        </li>
-	                        <li>
-	                            <a href="http://longzhu.pptv.com/" class="" target="_blank">
-	                                <img src="static/dist/images/aoyun.png" alt="" />
-	                                <div>
-	                                    <h5>里约奥运会</h5>
-	                                    <span>该项目是2016年巴西奥运会及英超专题项目，对赛程及视频实时更新展示；本次项目在时间相对紧急的情况下配合后端等相关团队积极沟通，相互配合最终完成该项目的上线</span>
-	                                </div>
-	                            </a>
-	                        </li>
-	                        <li>
-	                            <a href="http://z.pptv.com/gousas/" class="" target="_blank">
-	                                <img src="static/dist/images/usa.png" alt="" />
-	                                <div>
-	                                    <h5>美国旅游局专题</h5>
-	                                    <span>该项目为相关销售或商城部门业务，该业务专题页面主要为客户提供产品或相关需求展示及广告业务投放</span>
-	                                </div>
-	                            </a>
-	                        </li>
-	                        <li>
-	                            <a href="http://z.pptv.com/nubia/" class="" target="_blank">
-	                                <img src="static/dist/images/nubia.png" alt="" />
-	                                <div>
-	                                    <h5>努比亚发布会</h5>
-	                                    <span>该项目为相关销售或商城部门业务，该业务专题页面主要为客户提供产品或相关需求展示及广告业务投放</span>
-	                                </div>
-	                            </a>
-	                        </li>
-	                        <li>
-	                            <a href="http://yingchao.pptv.com/" class="" target="_blank">
-	                                <img src="static/dist/images/yingchao.png" alt="" />
-	                                <div>
-	                                    <h5>英超频道</h5>
-	                                    <span>该项目是2016年巴西奥运会及英超专题项目，对赛程及视频实时更新展示；本次项目在时间相对紧急的情况下配合后端等相关团队积极沟通，相互配合最终完成该项目的上线</span>
-	                                </div>
-	                            </a>
-	                        </li>
-	                        <li>
-	                            <a href="http://z.pptv.com/surpriseday/" class="" target="_blank">
-	                                <img src="static/dist/images/ppshopping.png" alt="" />
-	                                <div>
-	                                    <h5>PP商城</h5>
-	                                    <span>该项目为相关销售或商城部门业务，该业务专题页面主要为客户提供产品或相关需求展示及广告业务投放</span>
-	                                </div>
-	                            </a>
-	                        </li>
-	                        <li>
-	                            <a href="http://z.pptv.com/sportsvan/" class="" target="_blank">
-	                                <img src="static/dist/images/gaoerfu.png" alt="" />
-	                                <div>
-	                                    <h5>一汽大众·高尔夫专题</h5>
-	                                    <span>该项目为相关销售或商城部门业务，该业务专题页面主要为客户提供产品或相关需求展示及广告业务投放</span>
-	                                </div>
-	                            </a>
-	                        </li>
-	                        <li>
-	                            <a href="http://z.pptv.com/kd2016" class=" " target="_blank">
-	                                <img src="static/dist/images/kangdi.png" alt="" />
-	                                <div>
-	                                    <h5>康涤专题</h5>
-	                                    <span>该项目为相关销售或商城部门业务，该业务专题页面主要为客户提供产品或相关需求展示及广告业务投放</span>
-	                                </div>
-	                            </a>
-	                        </li>
-	                        <li>
-	                            <a href="http://finance.pptv.com/finance_app/download/" class=" " target="_blank">
-	                                <img src="static/dist/images/caijing.png" alt="" target="_blank" />
-	                                <div>
-	                                    <h5>财经APP下载引导页</h5>
-	                                    <span>该项目是财经APP项目完成上线后，根据个平台提供接口展示的多平台下载渠道，该页面根据不同尺寸设备进行适配；</span>
-	                                </div>
-	                            </a>
-	                        </li>
-	                    </ul>
-	                    <div class="clearfix"> </div>
-	                </section>
-	                
-	                <script type="text/javascript">
-		                $(function() {
-		                    $(' #da-thumbs > li ').each(function() {
-		                        $(this).hoverdir();
-		                    });
-		                });
-	                </script>
-	            </div>
-	        </div>
-	    </div>
-	</div>
+			<div class="section section2">
+				<h2 class="heading">工作经验<span class="heading-tit"></span></h2>
+				<div class="gzjy">
+					<ul>
+						<li class="slidein">
+							<img src="static/src/images/jiuliumi.png" alt="久留米公司官网">
+							<div class="mask">
+								<p>
+									前端主力开发人员，主要负责前端的重构模块开发业务方向，在职期间主要负责部分板块的重构和功能开发；开发中移动端pc端web都有涉及。
+技术涉及sea.js、grunt、gulp、webpack。</br>
+1.主站维护及部分功能的前端技术架构；</br>
+2.聚力专题活动页面开发；</br>
+3.移动主站重构模块开发；</br>
+4.主站重构及新增频道页开发；</br>
+								</p>
+							</div>
+						</li>
+						<li class="slidein">
+							<h3>yyyyy</h3>
+							<img src="static/src/images/pptv.png" alt="PP聚力官网">
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="section section3">
+				<div class="gallery" id="gallery" style="padding: 0;">
+					<div class="container xmzs">
+						<h2 class="heading">项目简介<span class="heading-tit"></span></h2>
+						<div class="gallery-grids">
+							<section>
+								<ul id="da-thumbs" class="da-thumbs">
+									<li>
+										<a href="static/dist/images/g1.jpg" class="" target="_blank">
+											<img src="static/dist/images/longzhu.png" alt="" />
+											<div>
+												<h5>龙珠频道</h5>
+												<span>对线上新增龙珠频道增加入口及前端页面/功能开发</span>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="http://longzhu.pptv.com/" class="" target="_blank">
+											<img src="static/dist/images/aoyun.png" alt="" />
+											<div>
+												<h5>里约奥运会</h5>
+												<span>该项目是2016年巴西奥运会及英超专题项目，对赛程及视频实时更新展示；本次项目在时间相对紧急的情况下配合后端等相关团队积极沟通，相互配合最终完成该项目的上线</span>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="http://z.pptv.com/gousas/" class="" target="_blank">
+											<img src="static/dist/images/usa.png" alt="" />
+											<div>
+												<h5>美国旅游局专题</h5>
+												<span>该项目为相关销售或商城部门业务，该业务专题页面主要为客户提供产品或相关需求展示及广告业务投放</span>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="http://z.pptv.com/nubia/" class="" target="_blank">
+											<img src="static/dist/images/nubia.png" alt="" />
+											<div>
+												<h5>努比亚发布会</h5>
+												<span>该项目为相关销售或商城部门业务，该业务专题页面主要为客户提供产品或相关需求展示及广告业务投放</span>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="http://yingchao.pptv.com/" class="" target="_blank">
+											<img src="static/dist/images/yingchao.png" alt="" />
+											<div>
+												<h5>英超频道</h5>
+												<span>该项目是2016年巴西奥运会及英超专题项目，对赛程及视频实时更新展示；本次项目在时间相对紧急的情况下配合后端等相关团队积极沟通，相互配合最终完成该项目的上线</span>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="http://z.pptv.com/surpriseday/" class="" target="_blank">
+											<img src="static/dist/images/ppshopping.png" alt="" />
+											<div>
+												<h5>PP商城</h5>
+												<span>该项目为相关销售或商城部门业务，该业务专题页面主要为客户提供产品或相关需求展示及广告业务投放</span>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="http://z.pptv.com/sportsvan/" class="" target="_blank">
+											<img src="static/dist/images/gaoerfu.png" alt="" />
+											<div>
+												<h5>一汽大众·高尔夫专题</h5>
+												<span>该项目为相关销售或商城部门业务，该业务专题页面主要为客户提供产品或相关需求展示及广告业务投放</span>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="http://z.pptv.com/kd2016" class=" " target="_blank">
+											<img src="static/dist/images/kangdi.png" alt="" />
+											<div>
+												<h5>康涤专题</h5>
+												<span>该项目为相关销售或商城部门业务，该业务专题页面主要为客户提供产品或相关需求展示及广告业务投放</span>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="http://finance.pptv.com/finance_app/download/" class=" " target="_blank">
+											<img src="static/dist/images/caijing.png" alt="" target="_blank" />
+											<div>
+												<h5>财经APP下载引导页</h5>
+												<span>该项目是财经APP项目完成上线后，根据个平台提供接口展示的多平台下载渠道，该页面根据不同尺寸设备进行适配；</span>
+											</div>
+										</a>
+									</li>
+								</ul>
+								<div class="clearfix"> </div>
+							</section>
 
-	<div class="section section4">
-		<h2 class="heading">技能熟练度<span class="heading-tit"></span></h2>
-		<div class="jineng html-txt">
-			<p>HTML</p>
-			<div class="progress">
-	        	<span></span>
-				<i>熟练</i>
+							<script type="text/javascript">
+								$(function () {
+									$(' #da-thumbs > li ').each(function () {
+										$(this).hoverdir();
+									});
+								});
+							</script>
+						</div>
+					</div>
+				</div>
 			</div>
-		</div>
-		<div class="jineng css-txt">
-			<p>CSS</p>
-			<div class="progress">
-	        	<span></span>
-				<i>熟练</i>
+
+			<div class="section section4">
+				<h2 class="heading">技能熟练度<span class="heading-tit"></span></h2>
+				<div class="jineng html-txt">
+					<p>HTML</p>
+					<div class="progress">
+						<span></span>
+						<i>熟练</i>
+					</div>
+				</div>
+				<div class="jineng css-txt">
+					<p>CSS</p>
+					<div class="progress">
+						<span></span>
+						<i>熟练</i>
+					</div>
+				</div>
+				<div class="jineng js-txt">
+					<p>JavaScript</p>
+					<div class="progress">
+						<span></span>
+						<i>掌握</i>
+					</div>
+				</div>
+				<div class="jineng jq-txt">
+					<p>Jquery</p>
+					<div class="progress">
+						<span></span>
+						<i>掌握</i>
+					</div>
+				</div>
+				<div class="jineng gulp-txt">
+					<p>Gulp</p>
+					<div class="progress">
+						<span></span>
+						<i>熟练</i>
+					</div>
+				</div>
+				<div class="jineng react-txt">
+					<p>react</p>
+					<div class="progress">
+						<span></span>
+						<i>了解</i>
+					</div>
+				</div>
+				<div class="jineng vue-txt">
+					<p>Vue</p>
+					<div class="progress">
+						<span></span>
+						<i>了解</i>
+					</div>
+				</div>
+
 			</div>
-		</div>
-		<div class="jineng js-txt">
-			<p>JavaScript</p>
-			<div class="progress">
-	        	<span></span>
-				<i>掌握</i>
-			</div>
-		</div>
-		<div class="jineng jq-txt">
-			<p>Jquery</p>
-			<div class="progress">
-	        	<span></span>
-				<i>掌握</i>
-			</div>
-		</div>
-		<div class="jineng gulp-txt">
-			<p>Gulp</p>
-			<div class="progress">
-	        	<span></span>
-				<i>熟练</i>
-			</div>
-		</div>
-		<div class="jineng react-txt">
-			<p>react</p>
-			<div class="progress">
-	        	<span></span>
-				<i>了解</i>
-			</div>
-		</div>
-		<div class="jineng vue-txt">
-			<p>Vue</p>
-			<div class="progress">
-	        	<span></span>
-				<i>了解</i>
+
+			<div class="section section5">
+				<h2 class="heading">我的资料<span class="heading-tit"></span></h2>
+				<div class="aboutinfo">
+					<p><span>男</span> 3年工作经验</p>
+					<p><span>现居住于:</span><span>上海-浦东新区</span><span>大专学历</span> 家乡：河南-南阳</p>
+					<p><span class="tel">手机：</span>17721023901</p>
+					<p><span class="eml">E-mail：</span>an_xmin@163.com</p>
+
+				</div>
+
 			</div>
 		</div>
 
-	</div>
+	</body>
 
-	<div class="section section5">
-		<h2 class="heading">我的资料<span class="heading-tit"></span></h2>
-		<div class="aboutinfo">
-			<p>男|3年工作经验|1990年1月|未婚</p>
-			<p>现居住于上海-浦东新区 |大专| 户口河南-南阳</p>
-			<p><span>手机：</span>17721023901</p>
-			<p><span>E-mail：</span>an_xmin@163.com</p>
-
-		</div>
-		
-	</div>
-</div>
-
-</body>
 </html>

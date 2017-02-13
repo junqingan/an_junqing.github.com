@@ -5,6 +5,7 @@
 	$('#homework').fullpage({
 		sectionsColor: ['#333', '#333', '#333', '#333', '#333'],
 		loopBottom: true,
+		
 		// navigation: true,
 		anchors: ['首页', '工作经验', '项目展示', '技能专栏', 'About'],
 		menu: '.top-menu',
@@ -76,7 +77,11 @@
 				
 			}
 		}
+		
 	});
+	setInterval(function(){
+			$.fn.fullpage.moveSlideRight();
+		}, 3000);
 
 
 
