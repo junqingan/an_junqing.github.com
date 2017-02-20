@@ -11,16 +11,16 @@
 		menu: '.top-menu',
 		afterLoad: function(anchorLink, index) {
 			if (index == 2) {
-				$('.section2').find('p').delay(200).animate({
-					left: '0'
-				}, 1200, 'easeOutExpo');
+				// $('.section2').find('p').delay(200).animate({
+				// 	left: '0'
+				// }, 1200, 'easeOutExpo');
 				$('.section2').find('.heading').delay(100).animate({
 					right:'0'
 				},500,'easeOutExpo')
 			}
 			if (index == 3) {
 				
-				$('.section3').find('.heading').delay(100).animate({
+				$('.section3').find('.heading').animate({
 					left:'0'
 				},500,'linear');
 				$('.section3').find('.gallery-grids').animate({
@@ -49,18 +49,18 @@
 		onLeave: function(index, direction) {
 
 			if (index == '2') {
-				$('.section2').find('p').delay(200).animate({
-					left: '-150%'
-				}, 1500, 'easeOutExpo');
+				// $('.section2').find('p').delay(200).animate({
+				// 	left: '-150%'
+				// }, 1500, 'easeOutExpo');
 				$('.section2').find('.heading').delay(100).animate({
 					right:'-150%'
 				},500,'linear')
 			}
 			if (index == '3') {
-				$('.section3').find('.heading').delay(100).animate({
+				$('.section3').find('.heading').delay(500).animate({
 					left:'-150%'
 				},500,'linear')
-				$('.section3').find('.gallery-grids').delay(200).animate({
+				$('.section3').find('.gallery-grids').delay(500).animate({
 					right: '-150%'
 				}, 1000, 'linear');
 			}
@@ -294,15 +294,49 @@
 		return instance;
 		
 	};
-	// ;(function (e){
-	// 	var mypic
-	// })
 	
 } )( jQuery, window );
-;(function (argument) {
-	$('.mypic').hover(function(){
-	    $(".picinfo").css("display","block");
-	},function(){
-	    $(".picinfo").css("display","none");
-	});
-})
+;$(function() {
+	
+	var rightBtn=$('.rightbtn');
+    var leftBtn=$('.leftbtn');
+	var imgList = $('.imglist');
+	var imgKey=0;
+	var banner=$('.gzjy');
+    var timer;
+
+    var tempImg=imgList.children('li').first().clone(true);
+
+    imgList.append(tempImg);
+    
+    function nextFn(event) {
+    	imgKey++;
+    	if (imgKey>2) {
+    		 imgKey=1;
+    		 imgList.css('margin-left', 0);
+    	}
+    	var moves=imgKey*-100+'%';
+        imgList.stop().animate({'margin-left':moves}, 1500);
+    };
+     timer=setInterval(nextFn, 5000);
+     banner.hover(function() {
+    	clearInterval(timer);
+    }, function() {
+    	clearInterval(timer);
+    	timer=setInterval(nextFn, 5000);
+    });
+ 	rightBtn.click(nextFn);
+  	leftBtn.click(function(event) {
+	  	imgKey--;
+		if(imgKey<0){
+			
+			imgKey=1;
+			imgList.css('margin-left', '-200%');
+
+		}
+		var moves=imgKey*-100+'%';
+		//%在JS里面表示取余，直接在后面书写，一定不对
+		//让整个UL移动
+		imgList.stop().animate({'margin-left':moves}, 500);
+  	});
+});

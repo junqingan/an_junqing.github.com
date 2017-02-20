@@ -817,7 +817,7 @@ span.heading-tit {
     position: relative;
     box-shadow: 0 0 5px 0px #ddd inset;
 }
-.section2 p { position: relative; left: -150%;}
+
 .section3 .gallery-grids { position: relative; right:  -150%;}
 .section4 .jineng.html-txt,
 .section4 .jineng.css-txt,
@@ -1006,19 +1006,21 @@ span.heading-tit {
 
 .gzjy{
     width: 100%;
-    height: 100%;
+    height: 600px;
     overflow: hidden;
     position: relative;
 }
 .gzjy ul{
-    width: 2400px;
-    height: 800px;
+    width: 300%;
+    height: 600px;
     overflow: hidden;
 }
 .gzjy ul li{
-    width: 1200px;
-    height: 800px;
+    width: 1196px;
+    height: 596px;
     float: left;
+    position: relative;
+    border: 2px solid #fff;
 }
 .gzjy ul li h3{
     font-size: 16px;
@@ -1031,14 +1033,55 @@ span.heading-tit {
 .gzjy ul li img{
     display: block;
     width: 100%;
+    height: 100%;
 }
-.gzjy .mask{
-    width: 500px;
-    height: 800px;
-    background: rgba(0, 0, 0, .6);
+.gzjy .mask {
     position: absolute;
     top: 0px;
-    right: 50px;
+    right: 0px;
+    display: none;
+}
+.gzjy .mask p{
+    width: 80%;
+    height: 476px;
+    padding: 120px 10% 0 10%;
+    background: rgba(0, 0, 0, .8);
+    color: #fff;
     font-size: 20px;
-    line-height: 40px;
+    line-height: 50px;
+    text-align: left;
+}
+.gzjy .mask p .mask-tit{
+    display: inline-block;
+    padding: 5px 10px;
+    position: absolute;
+    top: 35px;
+    left: 50%;
+    font-size: 24px;
+    color: yellow;
+    transform:translateX(-50%);
+}
+.gzjy ul li:hover .mask{
+    display: block;
+}
+.gzjy .leftbtn,
+.gzjy .rightbtn{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20px;
+    width: 36px;
+    height: 64px;
+    background:url(../images/left.png) no-repeat;
+    cursor: pointer;
+    display: none;
+}
+.gzjy .rightbtn{
+    left: auto;
+    right: 20px;
+    background: url(../images/right.png) no-repeat;
+}
+.gzjy:hover .leftbtn,
+.gzjy:hover .rightbtn{
+    display: block;
 }
