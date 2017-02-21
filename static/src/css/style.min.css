@@ -1020,7 +1020,27 @@ span.heading-tit {
     height: 596px;
     float: left;
     position: relative;
-    border: 2px solid #fff;
+    border: 2px solid #00394b;
+}
+.gzjy ul li:before{
+    content: "";
+    position: absolute;
+    top: -2px;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    background: -webkit-linear-gradient(left,#03171e,#4bedd4 50%,#03171e);
+    background: linear-gradient(to right,#03171e,#4bedd4 50%,#03171e);
+}
+.gzjy ul li:after{
+        content: "";
+    width: 100%;
+    height: 2px;
+    background: -webkit-linear-gradient(left,#03171e,#4bedd4 50%,#03171e);
+    background: linear-gradient(to right,#03171e,#4bedd4 50%,#03171e);
+    position: absolute;
+    bottom: -2px;
+    left: 0;
 }
 .gzjy ul li h3{
     font-size: 16px;
@@ -1041,6 +1061,7 @@ span.heading-tit {
     right: 0px;
     display: none;
 }
+
 .gzjy .mask p{
     width: 80%;
     height: 476px;
